@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Results</title>
+</head>
+<body>
+<h1>Results</h1>
+<p>Share Price Impact: {{ results.share_price_impact }}%</p>
+<ul>
+{% for article in results.news_articles %}
+<li><a href="{{ article.url }}">{{ article.title }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
